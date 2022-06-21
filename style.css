@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
@@ -43,6 +44,7 @@ table {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
  
 }
 /*----------------------------------------------------------------------------------------------------*/
@@ -58,7 +60,12 @@ body {
 
 @media (min-width:760px) {
 
+   body {
+    box-sizing: border-box;
+   }
+
    
+
     nav {
         display: inline-block;
         position: relative;
@@ -321,13 +328,175 @@ body {
 }
 
 
+/*---Ürünlerin altı-----*/
+
+.new-buy-link {
+    
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    padding-top: 70px;
+}
+.new-buy-link a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: #d6ff38;
+    
+    padding: 20px;
+    
+
+}
+.new-buy-link a:hover {
+    background-color: #d6ff38;
+    color: black;
+    border: 2px solid black;
+}
+
+/*----İNDİRİM-----*/
+
+.discount {
+    height: 700px;
+    display: flex;
+}
+.discount-left {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 60%;
+    background-image: linear-gradient(to top, #d6ff38, white);
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 200px;   
+}
+.discount-left i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.discount-left h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.discount-left h1 {
+    font-size: 120px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.discount-right {
+    position: relative;
+    display: inline-block;
+    width: 39%;
+    height: 100%;
+   background-image: url(r12.png);
+   background-size: cover;
+}
+
+
+/*-----FOOTER------------------------------------------------------------------------------------------------------------------------------*/
+
+footer { 
+    width: 100%;
+    position: relative;
+    display:inline-block;
+}
+.footer-top-left {
+    display: inline-block;
+    position: relative;
+    height: 290px;
+    width: 34%;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    top: -50px;
+    text-align: center;
+    padding-top: 120px;
+    border: 2px solid #d6ff38;
+   
+}
+
+.footer-top-left > h1, h4 {
+position: relative;
+margin-bottom: 10px;
+
+}
+
+
+.footer-top-right {
+    display: inline-block;
+    position: relative;
+    height: 290px;
+    border: 2px solid black;
+    top: 56px;
+    width: 65%;
+    
+}
+.footer-top-right table {
+    position: relative;
+    top: 80px;
+    left: 28%;
+    
+}
+td {
+    padding-bottom: 10px;
+    padding-right: 100px;
+}
 
 
 
 
+.footer-bottom-left {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 34%;
+    text-align: center;
+    padding: 17px;
+    box-sizing: border-box;
+    border: 2px solid #d6ff38;
+  
+}
+.footer-bottom-left i {
+    padding-right: 25px;
+    color:  black;
+}
+
+
+.footer-bottom-right {
+    position: relative;
+    display: inline-block;
+   
+    height: 50px;
+    width: 65%;
+    background-color:#d6ff38;
+    text-align: center;
+    padding-top: 17px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
 
 
 
+
+footer ~ i {
+    padding: 15px;
+    background-color: black;   
+    color: white;
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    left: 95%;
+    top: 90%;
+    z-index: 99;
+    border-radius: 8px;
+   }
+
+   footer ~ i:hover {
+    color: #d6ff38;
+   }
 
 
 
